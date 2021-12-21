@@ -7,14 +7,11 @@ class WhatsYourBmi {
 
     System.out.println("Please enter your height (inches)");
     person1.height = keyboard.nextDouble();
-    double heightMeters = person1.height / 39.37;
-    double heightMetersSquared = heightMeters * heightMeters;
-
-
+    
     System.out.println("Please enter your weight");
     person1.weight = keyboard.nextDouble();
-    double weightKilo = person1.weight / 2.205;
-    double bmi = weightKilo / heightMetersSquared;
+
+    double bmi = person1.getBmi(person1.height, person1.weight);
     
     if (bmi < 18.5) {
       System.out.println("your BMI is: " + bmi + " You are Underweight. Go eat.");
