@@ -9,7 +9,7 @@ public class AreaOfTriangle {
     Scanner input = new Scanner(System.in);
 
     System.out.println("Please input the base of the triangle (in inches).");
-    double base = input.nextDouble()
+    double base = input.nextDouble();
 
     while (base <= 0) {
         System.out.println("That's invalid. Please input the base of the triangle (in inches).");
@@ -24,8 +24,9 @@ public class AreaOfTriangle {
     }
 
     double area = (base * height) / 2;
-    System.out.println("The area is " + height);
+    System.out.println("The area is " + area);
 
+    input.close();
   }
 }
 // code from https://github.com/LinkedInLearning/learning-java-2825378/blob/04_03b/src/Main.java
